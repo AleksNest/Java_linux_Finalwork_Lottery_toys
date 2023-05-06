@@ -25,36 +25,40 @@ public class Store {
         for (Toy toy : toys) {
             if (toy.getId() == toyId) {
                 toy.setFrequency(newFrequency);
-                i ++;
+                i++;
             }
         }
-        if (i == 0){
+        if (i == 0) {
             return false;
         } else {
             return true;
         }
     }
 
-    public  ArrayList<Toy> deleteToyFromStore(ArrayList<Toy> toys, String name) {
+    public void deleteToyFromStore(ArrayList<Toy> toys, String name) {
         int i = 0;
-        for (Toy t : toys){
-            if (t.getName().contains(name)){
-                toys.remove(i);
+        for (Toy t : toys) {
+            if (t.getName().contains(name)) {
+                toys.remove(t);
                 i++;
+                break;
             }
         }
-        if (i > 0){
+
+        if (i > 0) {
             System.out.println("the toy  " + name + "  was successfully removed ");
+
         } else {
             System.out.println("the toy  " + name + "  does not exist");
+
+
         }
-        return toys;
     }
 
     public boolean changeToy(String name, int quantity, double frequency) {
         boolean flag = false;
         for (Toy t : toys) {
-            if (t.getName().contains(name)){
+            if (t.getName().contains(name)) {
                 t.setName(name);
                 t.setQuantity(quantity);
                 t.setFrequency(frequency);

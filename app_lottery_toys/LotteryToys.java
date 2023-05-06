@@ -1,9 +1,8 @@
 package app_lottery_toys;
 
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 
-public class main {
+public class LotteryToys {
     public static void main(String[] args) throws FileNotFoundException {
 
         FileClear.fileClear();                                                                      //очистка файла
