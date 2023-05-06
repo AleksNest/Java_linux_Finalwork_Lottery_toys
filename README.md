@@ -38,5 +38,5 @@ IDE IntelliJ IDEA Runtime version: 17.0.3, Oracle OpenJDK version 18.0.2
 - Store - модуль Магазин  
 - Toy - класс игрушка  
 - UI - модуль для работы пользователя с приложением   
-- LotteryToys - точка запуска приложения  
+- LotteryToys - точка запуска приложения!  
 
